@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #a6c9c9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: lch(99.88% 2.52 109.96);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulaire {
+    display: flex;
+    gap: 10px;
+}
+
+#tacheInput,
+#rechercheInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b3b1b1;
+    border-radius: 8px;
+}
+
+#rechercheInput {
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#ajouterBtn {
+    padding: 12px 20px;
+}
+
+.filtres {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.statistiques {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #e2e0e0;
+}
+
+.statistiques p {
+    margin: 0;
+}
+
+#listeTaches {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listeTaches li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #e0dddd;
+    border-radius: 8px;
+}
+
+#listeTaches li span {
+    flex: 1;
+}
+
+.terminee span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .formulaire {
+        flex-direction: column;
+    }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .statistiques {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #listeTaches li {
+        flex-wrap: wrap;
+    }
+}

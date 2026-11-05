@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📋 Task Manager</h1>
+
+        <div class="formulaire">
+
+            <input
+                type="text"
+                id="tacheInput"
+                placeholder="Écris une tâche..."
+            >
+
+            <button id="ajouterBtn">
+                Ajouter
+            </button>
+
+        </div>
+
+        <input
+            type="text"
+            id="rechercheInput"
+            placeholder="🔍 Rechercher une tâche..."
+        >
+
+        <div class="filtres">
+
+            <button id="toutesBtn">Toutes</button>
+            <button id="encoursBtn">En cours</button>
+            <button id="termineesBtn">Terminées</button>
+
+        </div>
+
+        <div class="statistiques">
+
+            <p>
+                Total :
+                <span id="totalTaches">0</span>
+            </p>
+
+            <p>
+                En cours :
+                <span id="tachesEnCours">0</span>
+            </p>
+
+            <p>
+                Terminées :
+                <span id="tachesTerminees">0</span>
+            </p>
+
+        </div>
+
+        <ul id="listeTaches"></ul>
+
+    </div>
+
+    <script src="./api.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
