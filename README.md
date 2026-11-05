@@ -1,5 +1,7 @@
 # TaskManager — Full-Stack Web Application
+## Application Preview
 
+![TaskManager Screenshot](images/taskmanager.png)
 A task management application developed using HTML, CSS, JavaScript, PHP and MySQL.
 
 This project started as a JavaScript To-Do List application and was later upgraded into a Full-Stack application with a PHP backend and a MySQL database.
